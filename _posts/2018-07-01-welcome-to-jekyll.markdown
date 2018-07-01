@@ -18,4 +18,4 @@ an easier way or an easy approach to the subject. Here are the ideas for July 20
 * Deep learning (DL)
 
 
-Keep posted for updates on the content updates.
+Keep posted for updates on the content.
