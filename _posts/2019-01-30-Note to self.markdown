@@ -20,3 +20,5 @@ As a kind-of note to myself ( hence the title! ) I am leaving here a list of tec
 - Python
 - Babel
 - Java
+
+See you next time!

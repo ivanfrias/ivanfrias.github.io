@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![Ivan Frias](https://media.licdn.com/dms/image/C5603AQGlAGkuCWxbPw/profile-displayphoto-shrink_200_200/0?e=1554336000&v=beta&t=MJrPA8LM-KHMyHq8YwShIfS1TSp6KFCdn35C3-1znhs)
+![Ivan Frias](/assets/me.jpg)
 
 ### Who Am I
 
