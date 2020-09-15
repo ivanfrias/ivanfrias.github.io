@@ -22,3 +22,6 @@ show_excerpts: true
 
 minima:
   date_format: "%b %-d, %Y"
+
+jekyll_compose:
+    auto_open: true
