@@ -4,8 +4,6 @@ title: About
 permalink: /about/
 ---
 
-![Ivan Frias](/assets/me.jpg)
-
 ### Who Am I
 
 My name is Ivan. I'm a software developer, based in Portugal. I am a simple person with a good taste for life. I usually enjoy relaxing while drinking a glass of wine.
