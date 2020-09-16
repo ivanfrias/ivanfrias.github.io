@@ -13,6 +13,8 @@ texture:
   navigation:
     - title: About
       url: "/about"
+    - home: Home
+      url: "/home"
   showPicker: false
 email: frias.ivan@gmail.com
 
