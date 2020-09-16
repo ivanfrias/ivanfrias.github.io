@@ -9,7 +9,7 @@ texture:
     linkedin: ivan-frias
     rss: rss
   style: black
-  showNavigation: true
+  showNav: true
   showPicker: false
 email: frias.ivan@gmail.com
 
