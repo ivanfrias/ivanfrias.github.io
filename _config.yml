@@ -1,27 +1,33 @@
-title: Work in progress
-author: Ivan Frias
+texture:
+  title: Work in progress
+  tagline: Software Developer
+  author: Ivan Frias
+  dateformat: "%b %-d, %Y"
+  social_links:
+    twitter: ifrias
+    github: ivanfrias
+    linkedin: ivan-frias
+    rss: rss
+  style: black
+  showNavigation: true
+  showPicker: false
 email: frias.ivan@gmail.com
+
 description: >-
   Hi, I'm Ivan, a software developer from Portugal. This is my gateway to the internet.
+
 baseurl: "/"
 url: "https://ivanfrias.github.io"
-twitter_username: ifrias
-github_username:  ivanfrias
-facebook_username:  ivan.m.frias
-linkedin_username: ivan-frias
-rss: rss
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: thelehhman/texture
+theme: texture
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
 show_excerpts: true
-
-minima:
-  date_format: "%b %-d, %Y"
 
 jekyll_compose:
     auto_open: true

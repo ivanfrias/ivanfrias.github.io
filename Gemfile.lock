@@ -1,3 +1,11 @@
+GIT
+  remote: https://github.com/samarsault/texture
+  revision: b3c070a12c6a3d34f95cd49317c234d5e08b2854
+  specs:
+    texture (0.5)
+      jekyll (>= 3.7)
+      jekyll-seo-tag (>= 2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -48,10 +56,6 @@ GEM
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     mercenary (0.4.0)
-    minima (2.5.1)
-      jekyll (>= 3.5, < 5.0)
-      jekyll-feed (~> 0.9)
-      jekyll-seo-tag (~> 2.1)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.6)
@@ -75,7 +79,7 @@ DEPENDENCIES
   jekyll-compose
   jekyll-feed (~> 0.6)
   jekyll-seo-tag
-  minima (~> 2.5)
+  texture!
   tzinfo-data
 
 BUNDLED WITH
