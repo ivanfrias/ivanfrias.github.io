@@ -39,7 +39,9 @@ export CSC_KEY_PASSWORD=<Password>
 
 **Password** is the password defined previously on the keystore app.
 
-For windows it's a bit easier. I've found that we don't need to add environment variables for this to work. We just need to add the certificates.
+For windows it's a bit easier. I've found that we don't need to add environment variables for this to work. We just need to install the certificates by double clicking the *.p12 file.
+
+And that's it, hope you find this post interesting!
 
 
 
