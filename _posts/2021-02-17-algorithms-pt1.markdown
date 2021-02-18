@@ -2,7 +2,7 @@
 layout: post
 title:  "algorithms - pt1"
 date:   2021-02-17 10:00:00 +0000
-categories: algorithms develolopment javascript
+categories: algorithms development javascript
 ---
 
 # Needle in haystack challenge
