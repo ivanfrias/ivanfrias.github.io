@@ -8,14 +8,14 @@ texture:
     github: ivanfrias
     linkedIn: in/ivan-frias
     rss: rss
-  style: black 
+  style: black
   showNav: true
   navigation:
-    - title: About
-      url: "/about"
     - title: Home
       url: "/"
-    - title: Projects 
+    - title: About
+      url: "/about"
+    - title: Projects
       url: "/projects"
   showPicker: false
 email: frias.ivan@gmail.com
