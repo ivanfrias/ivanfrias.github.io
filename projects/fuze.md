@@ -4,8 +4,8 @@ title: Fuze Projects
 permalink: /projects/fuze
 ---
 
-# Fuze
-### Bulk sound upload utility
+# Fuze projects
+## _Bulk sound upload utility_
 
 **Type**: customer-facing
 
@@ -16,7 +16,7 @@ call-flow related audio-files on a regular basis.
 
 **Technologies**: Nodejs, mocha, chai, Typescript, REST
 
-### Number Portability
+## _Number Portability_
 
 **Type**: customer&internal facing
 
@@ -33,7 +33,7 @@ This is a high visibility and complex monolithic application.
 
 **Technologies**: React, HTML, CSS, JavaScript, Typescript, Java 8, Spring, Docker, Junit 4/5, TestNG, Mockito, Postgres, Liquibase, MyBatis  
 
-### Groups of Contacts Back-Office web-application
+## _Contact Rosters Hub features_
 
 **Type**: customer&internal facing
 
@@ -45,7 +45,7 @@ associated peers.
 
 **Technologies**: React, HTML, CSS, JavaScript, TypeScript, REST, Selenium, Mocha
 
-### Bulk Provisioning Utility
+## _Bulk Provisioning Utility_
 
 **Type**: internal facing
 
@@ -60,7 +60,7 @@ required to provision from hours to seconds.
 
 **Technologies**: Vue.js, Vuex, Vuetify, HTML, CSS, Electron, Node.js, CouchDB, REST
 
-### Email2Fax service
+## _Email2Fax service_
 
 **Type**: customer facing
 
@@ -71,7 +71,7 @@ required to provision from hours to seconds.
 **Technologies**
 Node.js, Javascript, AWS Lambda, AWS SNS, AWS S3, REST
 
-### Customized Click-to-Call Browser plugin
+## _Customized C2C Browser plugin_
 
 **Type**: customer&internal facing
 
@@ -85,7 +85,7 @@ Masking numbers are inserted through a back-office web-application specifically 
 **Technologies**
 Vue.js, HTML, CSS, REST, AWS S3, Javascript, Bootstrap, AWS Route 53, AWS EC2
 
-### SIP Peers Lookup web-application
+## _SIP Peers Lookup web-application_
 
 **Type**: internal facing
 
@@ -98,3 +98,17 @@ queries to the central Peers database ( owned by Engineering ).
 
 **Technologies**
 Vue.js, Javascript, HTML, CSS, REST, AWS EC2, Express.js, AWS Route 53
+
+## _Fuze Connect Provisioning Tool_
+
+**Type**: internal facing
+
+**Architecture**: Full-stack
+
+**Description**: Implemented a back-office web application to access configuration information
+for the Fuze Connect product and enable to provision new users and related information.
+This tool is currently being used by internal teams. It consists on a web application powered
+by Vue.js and a microservice developed on Express.js
+
+**Technologies**
+Vue.js, Javascript, HTML, CSS, REST, AWS EC2, Express.js, AWS Route 53, MySQL
