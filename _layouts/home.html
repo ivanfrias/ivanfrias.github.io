@@ -1,0 +1,72 @@
+---
+layout: page
+---
+{%- comment -%}
+  Local override of the texture theme's home.html.
+  Adds a "Show updates since" date filter (defaults to the last 30 days) and a
+  "No updates available" empty state. Without JavaScript, all posts are listed and
+  the filter stays hidden.
+{%- endcomment -%}
+{%- assign date_format = site.texture.dateformat | default: "%b %-d, %Y" -%}
+<div class="updates-filter" hidden>
+	<label for="updates-since">Show updates since</label>
+	<input type="date" id="updates-since" name="since">
+</div>
+{%- if site.posts.size > 0 -%}
+<ul class="posts">
+	{%- for post in site.posts -%}
+	<li data-date="{{ post.date | date: '%Y-%m-%d' }}">
+		<div class="post-meta">
+			<a class="post-link" href="{{ post.url | relative_url }}">
+				<h2 class="post-title">{{ post.title | escape }}</h2>
+			</a>
+			<div class="post-date"><i class="icon-calendar"></i>{{ post.date | date: date_format }}</div>
+		</div>
+		<div class="post">
+			{%- if site.show_excerpts -%}
+			{{ post.excerpt }}
+			{%- endif -%}
+		</div>
+	</li>
+	{%- endfor -%}
+</ul>
+{%- endif -%}
+<p class="no-updates"{% if site.posts.size > 0 %} hidden{% endif %}>No updates available.</p>
+
+<script>
+(function () {
+	var DEFAULT_DAYS = 30;
+	var filter = document.querySelector('.updates-filter');
+	var input = document.getElementById('updates-since');
+	var items = Array.prototype.slice.call(document.querySelectorAll('.posts > li[data-date]'));
+	var empty = document.querySelector('.no-updates');
+
+	// Local date formatted as YYYY-MM-DD (the value format used by <input type="date">).
+	function isoDate(d) {
+		var m = String(d.getMonth() + 1).padStart(2, '0');
+		var day = String(d.getDate()).padStart(2, '0');
+		return d.getFullYear() + '-' + m + '-' + day;
+	}
+
+	function apply() {
+		var since = input.value; // empty string = no filter, show everything
+		var visible = 0;
+		items.forEach(function (li) {
+			var show = !since || li.getAttribute('data-date') >= since;
+			li.hidden = !show;
+			if (show) visible++;
+		});
+		empty.hidden = visible > 0;
+	}
+
+	var today = new Date();
+	var start = new Date(today);
+	start.setDate(today.getDate() - DEFAULT_DAYS);
+	input.max = isoDate(today);
+	input.value = isoDate(start);
+	input.addEventListener('change', apply);
+	input.addEventListener('input', apply);
+	filter.hidden = false;
+	apply();
+})();
+</script>

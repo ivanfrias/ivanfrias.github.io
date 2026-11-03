@@ -111,3 +111,31 @@
         color: #ddd;
     }
 }
+
+// Front page "Show updates since" date filter (see _layouts/home.html)
+.updates-filter {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 40px;
+    color: #999;
+    font-size: 0.9em;
+
+    &[hidden] {
+        display: none;
+    }
+
+    input[type="date"] {
+        font: inherit;
+        color: #333;
+        padding: 4px 8px;
+        border: 1px solid #eee;
+        border-radius: 4px;
+    }
+}
+
+.no-updates {
+    margin-top: 40px;
+    color: #999;
+}
