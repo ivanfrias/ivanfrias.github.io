@@ -641,7 +641,7 @@ header {
         -webkit-backdrop-filter: blur(8px);
         padding: 4px 12px;
         border-radius: 9999px;
-        margin-bottom: 14px;
+        margin-bottom: 0;
         box-shadow: 0 0 16px rgba(56, 189, 248, 0.25);
 
         .pulse-indicator {
@@ -855,10 +855,16 @@ main {
 
 // ==========================================
 // Brand Logo Lockup & Screen-Reader Heading
+.brand-row {
+    display: block;
+    width: 100%;
+    margin-bottom: 14px;
+}
+
 .brand-logo-lockup {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 12px;
+    display: block;
+    width: fit-content;
+    margin-bottom: 14px;
 
     .logo-link {
         display: inline-flex;
