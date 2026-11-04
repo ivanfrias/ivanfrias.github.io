@@ -14,6 +14,13 @@ Explore the projects and systems I've designed, developed, and contributed to th
     <span class="card-link">View Projects &rarr;</span>
   </a>
 
+  <a href="{% link projects/talkdesk.md %}" class="project-card">
+    <div class="card-badge">Talkdesk</div>
+    <h3>Talkdesk</h3>
+    <p>Cloud Contact Center platform engineering, enterprise integrations, high-throughput distributed microservices, and telephony workflows.</p>
+    <span class="card-link">View Projects &rarr;</span>
+  </a>
+
   <a href="{% link projects/carmedialab.md %}" class="project-card">
     <div class="card-badge">2013 – 2016</div>
     <h3>CarMediaLab</h3>
