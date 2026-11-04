@@ -5,13 +5,14 @@ permalink: /projects/dinamogest
 ---
 
 # Dinamogest
-### Bulk sound upload utility
 
-**Type**: customer-facing
+## _Business Applications & Custom Solutions_
 
-**Architecture**: command-line utility
+**Type**: customer-facing & internal tooling
 
-**Description**: Developed a command-line bulk upload tool, used by a large customer to upload
-call-flow related audio-files on a regular basis.
+**Architecture**: client-server & web applications
 
-**Technologies**: Nodejs, mocha, chai, Typescript, REST
+**Description**: Developed and maintained software solutions for small-to-medium businesses. Focused on building business logic, database-backed tools, and workflow automation applications using Microsoft .NET technologies.
+
+**Technologies**: C#, .NET Framework, SQL Server, ASP.NET, WinForms
+

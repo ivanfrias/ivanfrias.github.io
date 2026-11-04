@@ -4,14 +4,15 @@ title: PT-Inovação Projects
 permalink: /projects/ptin
 ---
 
-# PT-Inovação
-### Bulk sound upload utility
+# PT-Inovação / Altice Labs
 
-**Type**: customer-facing
+## _Telecom Systems & Platform Engineering_
 
-**Architecture**: command-line utility
+**Type**: enterprise & internal facing
 
-**Description**: Developed a command-line bulk upload tool, used by a large customer to upload
-call-flow related audio-files on a regular basis.
+**Architecture**: distributed backend systems / enterprise platforms
 
-**Technologies**: Nodejs, mocha, chai, Typescript, REST
+**Description**: Joined in 2010 to work on large-scale telecommunications software and platform solutions. Contributed to engineering initiatives requiring high reliability, navigating complex legacy architectures, and modernizing legacy codebases under tight technical schedules and demanding operational SLAs.
+
+**Technologies**: Java, C/C++, Linux, SQL, Enterprise Telephony & Network Protocols
+
