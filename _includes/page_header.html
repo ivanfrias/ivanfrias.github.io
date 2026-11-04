@@ -1,0 +1,24 @@
+<div class="header-content-wrapper">
+	<canvas id="doom-fire-canvas" class="doom-fire-bg" aria-hidden="true"></canvas>
+	<div class="doom-scanlines" aria-hidden="true"></div>
+	<div class="doom-vignette" aria-hidden="true"></div>
+	<div class="container header-container">
+		<div class="doom-badge">
+			<span class="doom-dot"></span> DOOM // E1M1
+		</div>
+		<h1>{{ site.texture.title }}</h1>
+		<h2>{{ site.texture.tagline }}</h2>
+		<ul class="social">
+			{%- if site.texture.social_links.github -%}
+				<a href="https://github.com/{{ site.texture.social_links.github }}" title="GitHub"><li><i class="icon-github-circled"></i></li></a>
+			{%- endif -%}
+			{%- if site.texture.social_links.linkedIn -%}
+				<a href="https://linkedin.com/{{ site.texture.social_links.linkedIn }}" title="LinkedIn"><li><i class="icon-linkedin-squared"></i></li></a>
+			{%- endif -%}
+			{%- if site.texture.social_links.twitter -%}
+				<a href="https://twitter.com/{{ site.texture.social_links.twitter }}" title="Twitter"><li><i class="icon-twitter-squared"></i></li></a>
+			{%- endif -%}
+		</ul>
+	</div>
+</div>
+<script src="{{ "/assets/js/doom-fire.js" | relative_url }}"></script>
