@@ -191,6 +191,8 @@ header {
         align-items: center;
         gap: 12px;
         margin-top: 20px;
+        overflow: visible !important;
+        padding-top: 10px;
 
         a {
             display: inline-flex;
@@ -616,6 +618,11 @@ header {
     .header-container {
         position: relative;
         z-index: 5;
+        overflow: visible !important;
+    }
+
+    ul.social {
+        overflow: visible !important;
     }
 
     .hero-tag-badge {
