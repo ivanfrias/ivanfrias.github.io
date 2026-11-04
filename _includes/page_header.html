@@ -6,7 +6,30 @@
 		<div class="hero-tag-badge">
 			<span class="pulse-indicator"></span> Code &bull; Gaming &bull; Tech &bull; Audio
 		</div>
-		<h1>{{ site.texture.title }}</h1>
+		<div class="brand-logo-lockup">
+			<div class="logo-mark">
+				<svg class="logo-svg" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+					<defs>
+						<linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+							<stop offset="0%" stop-color="#38bdf8"/>
+							<stop offset="50%" stop-color="#818cf8"/>
+							<stop offset="100%" stop-color="#c084fc"/>
+						</linearGradient>
+						<linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+							<stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+							<stop offset="100%" stop-color="#818cf8" stop-opacity="0.3"/>
+						</linearGradient>
+					</defs>
+					<rect x="2" y="2" width="40" height="40" rx="10" stroke="url(#borderGrad)" stroke-width="2" fill="rgba(15, 23, 42, 0.7)"/>
+					<!-- Stylized Monogram IF -->
+					<path d="M14 13H18V31H14V13Z" fill="url(#logoGrad)"/>
+					<path d="M22 13H31V17H26V20H30V24H26V31H22V13Z" fill="url(#logoGrad)"/>
+				</svg>
+			</div>
+			<div class="brand-name-wrap">
+				<h1 class="brand-name"><span class="first-name">Ivan</span> <span class="last-name">Frias</span></h1>
+			</div>
+		</div>
 		<h2>{{ site.texture.tagline }}</h2>
 		<ul class="social">
 			{%- if site.texture.social_links.github -%}
