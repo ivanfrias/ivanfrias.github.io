@@ -1,4 +1,4 @@
-// Subtle warm glowing ambient ember/light wave animation across the hero header
+// Modern neon cyan & electric violet digital waveform simulation
 (function () {
     var canvas = document.getElementById('hero-waveform-canvas');
     if (!canvas) return;
@@ -18,20 +18,20 @@
 
     var time = 0;
     var waves = [
-        { freq: 0.007, speed: 0.012, amp: 26, color: 'rgba(251, 146, 60, 0.42)', lineWidth: 2 }, // Warm amber
-        { freq: 0.011, speed: 0.018, amp: 34, color: 'rgba(239, 68, 68, 0.35)', lineWidth: 2 },  // Wine ruby
-        { freq: 0.005, speed: 0.009, amp: 20, color: 'rgba(253, 224, 71, 0.28)', lineWidth: 1.5 } // Fireplace gold
+        { freq: 0.008, speed: 0.016, amp: 26, color: 'rgba(56, 189, 248, 0.45)', lineWidth: 2 }, // Electric Cyan
+        { freq: 0.013, speed: 0.022, amp: 32, color: 'rgba(168, 85, 247, 0.38)', lineWidth: 2 }, // Neon Violet
+        { freq: 0.005, speed: 0.010, amp: 18, color: 'rgba(34, 211, 238, 0.30)', lineWidth: 1.5 } // Aquamarine
     ];
 
     function drawWave(w) {
         ctx.beginPath();
-        var yBase = canvas.height * 0.82;
+        var yBase = canvas.height * 0.84;
         ctx.moveTo(0, yBase);
 
         for (var x = 0; x < canvas.width; x += 3) {
             var y = yBase +
                 Math.sin(x * w.freq + time * w.speed) * w.amp * Math.sin(x * 0.003 + time * 0.008) +
-                Math.sin(x * 0.018 + time * 0.02) * 5;
+                Math.sin(x * 0.02 + time * 0.025) * 5;
             ctx.lineTo(x, y);
         }
 
